@@ -13,11 +13,17 @@ public class AnimalsCage {
     @Autowired
     private Timer time;
 
+    public Timer getTimer() {
+        return time;
+    }
+
     public void whatAnimalSay() {
         System.out.println("Say:");
         System.out.println(animal.toString());
         System.out.println("At:");
-        System.out.println(time.getTime());
+        System.out.println(getTimer().getTime());
         System.out.println("________________________");
     }
+
+
 }
